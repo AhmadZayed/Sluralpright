@@ -1,0 +1,223 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* Fonts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    background-color:#181818 ;
+    color: white;
+    overflow: hidden;
+}
+body{
+    font-family: 'Roboto' sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.right{
+    flex:1;
+}
+/* Start Sign in */
+.signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.signin form{
+    width: 80%;
+    padding-bottom: 3rem;
+}
+.signin .logo{
+    margin-bottom: 8vh;
+}
+.signin .logo img{
+    width: 300px;
+}
+.signin label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+.signin .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    background-color: #181818;
+    border-radius: 2px;
+    border: 1px solid #555;
+    color: #ccc;
+    padding:0.5rem 1rem;
+    line-height: 1.3rem;
+
+}
+.signin .text-input:focus{
+    outline: none;
+}
+.primary-btn{
+    width: 100%;
+    height: 2.7rem;
+    text-align: center;
+    background-color: #f96816;
+    color: white;
+    border: none;
+    border-radius: 2px ;
+    padding:0.7rem 1rem ;
+    margin-bottom: 40px;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.primary-btn:hover{
+    background-color: #ff7b39;
+}
+.secondary-btn{
+    height: 2.7rem;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px ;
+    padding:0.7rem 1rem ;
+    margin-bottom: 40px;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.secondary-btn:hover{
+    color: #ff7b39;
+    border-color: #ff7b39;
+}
+.signin .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.signin .links a{
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+
+}
+a{
+    text-decoration: none;
+}
+.signin .secondary-btn,.or,.links{
+    width: 60%;
+    margin: 0 auto;
+}
+.signin .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.signin .or .bar{
+    flex: auto;
+    border:none;
+    height: 1px;
+    background-color: #aaa;
+
+}
+.signin .or span{
+    color: #ccc;
+    padding:0 0.8rem ;
+}
+.main-footer{
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+
+}
+.main-footer a{
+    color: #f96816;
+    text-decoration: underline;
+    margin:0 5px;
+    
+}
+
+/* End Sign in */
+
+/* showcase */
+.showcase{
+    background-image: url("images/login-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.showcase-content , .showcase-text,strong{
+    background:transparent ;
+}
+.showcase-text{
+    font-size: 3rem;
+    width: 100%;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.showcase .secondary-btn{
+    width: 60%;
+    margin: auto;
+}
+/* Media Queries */
+@media (min-width:1200px){
+    
+    .left{
+        flex: 4;
+    }
+    .right{
+        flex: 6;
+    }
+
+}
+@media (max-width:768px){
+    .right{
+        display: none;
+    }
+    .left{
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+    .main-footer{
+        padding-top: 0;
+    }
+    .signin form{
+        margin-bottom: 1.5rem;
+    }
+}
